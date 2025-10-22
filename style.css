@@ -1,0 +1,99 @@
+/** folha de estilo do site w12carservice.com
+@author Pedro Henrique Dantas Silva
+@eo_dantasph
+*/
+
+/*layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/*Variáveis*/
+:root {
+
+    --vermelho: #ed1822;
+    --vermelhoescuro: #a61118;
+    --amarelo: #d4d133;
+    --branco: #fff;
+    --preto: #000;
+    --cinzaescuro: #191919;
+
+}
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "BBH Sans Bogle", "Merriweather";
+}
+
+/* FIM layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Smartphone portraint >>>>>>>>>>>>>>>>>>>>>>>> */
+
+body {
+    background-color: #ff0000;
+}
+
+/* FIM Smartphone portraint <<<<<<<<<<<<<<<<<<<< */
+
+
+/* Smartphone landscap >>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: 576px) {
+    body {
+        background-color: #ffff00;
+    }
+}
+
+/* FIM Smartphone landscap <<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Tablet portraint >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+@media (min-width: 768px) {
+    body {
+        background-color: #00ff00;
+    }
+}
+
+/* FIM Tablet portraint <<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Tablet landscap >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+@media (min-width: 992px) {
+    body {
+        background-color: #00ffff;
+    }
+}
+
+/* FIM Tablet landscap <<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Notebook / PC - HD >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+@media (min-width: 1200px) {
+    body {
+        background-color: #0000ff;
+    }
+}
+
+/* FIM Notebook / PC - HD <<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Notebook / PC / TV - Full HD ou 4K >>>>>>>>>> */
+
+
+@media (min-width: 1400px) {
+    body {
+        background-color: #5e2a8f;
+    }
+}
+
+/* FIM Notebook / PC / TV - Full HD ou 4K <<<<<< */
