@@ -25,17 +25,251 @@
 }
 
 body {
-    font-family: "BBH Sans Bogle", "Merriweather";
+    font-family: "Barlow Semi Condensed";
 }
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Botão */
+
+.btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #ed1822;
+    color: #ffffff;
+    padding: 7px 30px;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+
+}
+
 
 /* FIM layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
+
 /* Smartphone portraint >>>>>>>>>>>>>>>>>>>>>>>> */
 
+/*cabeçalho*/
 body {
-    background-color: #ff0000;
+    background-color: #d81414;
 }
+
+header {
+    height: 65px;
+    background-color: var(--vermelhoescuro);
+}
+
+.logo img {
+    width: 129px;
+    height: 128px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    top: 0px;
+    right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 65px;
+    width: 60%;
+    right: -60%;
+    /*de acordo com o Width*/
+    background-color: rgba(184, 0, 0, 0.9);
+    transition: all 0.5s;
+}
+
+/* Ação para a caixa checkbox*/
+/* Quando selecionado mudar ul */
+
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--amarelo);
+    text-align: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+/* Principal */
+
+main {
+    height: 50vh;
+    background-color: #000;
+    background: url(fotos/banner/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--branco);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.5), 2px 2px 7px rgba(255, 255, 255, 0.5);
+}
+
+main h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 7px rgb(255, 255, 255);
+}
+
+#destaque {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    background: url(fotos/banner/bannerfundo.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#destaque .container {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    /* centraliza horizontalmente */
+    align-items: center;
+    /* alinha verticalmente */
+    flex-wrap: wrap;
+    /* permite quebrar linha no mobile */
+    gap: 40px;
+    /* espaço entre a imagem e o bloco vermelho */
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#hero img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 414px; /* limite no desktop */
+    height: auto;
+    border-radius: 500px;
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: white;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.topic p {
+    display: flex;
+}
+
+.vermelho {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--vermelhoescuro);
+    color: rgb(241, 233, 233);
+    align-items: center;
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+    max-width: 400px; 
+    text-align: center;
+    border: 1px solid white;
+}
+
+.vermelho img {
+    width: 40px;
+}
+
+.topic p {
+    margin-left: 10px;
+}
+
+
+
+section .paragrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px ;
+    text-align: center;
+    color: #fff;
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 40px 0;
+    text-shadow: -2px 2px 2 rgba(0, 0, 0, 0.8);
+}
+
+#video iframe {
+    width: 80%;
+    max-width: 414px; 
+    height: 215px;
+    border: none;
+    border-radius: 10px; 
+    margin-bottom: 30px;
+    
+}
+
+.fqs{
+    background-color: var(--vermelhoescuro);
+    margin: 0;
+}
+
+
+
+
 
 /* FIM Smartphone portraint <<<<<<<<<<<<<<<<<<<< */
 
@@ -43,9 +277,23 @@ body {
 /* Smartphone landscap >>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (min-width: 576px) {
-    body {
-        background-color: #ff0000;
+
+    /* Cabeçario */
+    .container {
+        max-width: 560px;
     }
+
+    nav ul {
+        width: 40%;
+        right: -40%;
+    }
+
+    /* */
+    main {
+        height: 75vh;
+    }
+
+
 }
 
 /* FIM Smartphone landscap <<<<<<<<<<<<<<<<<<<<< */
@@ -55,9 +303,21 @@ body {
 
 
 @media (min-width: 768px) {
-    body {
-        background-color: #ff0000;
+
+    /* LAYOUT */
+    .container {
+        max-width: 720px;
     }
+
+    /* PRINCIPAL */
+    main h1 {
+        font-size: 4rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 /* FIM Tablet portraint <<<<<<<<<<<<<<<<<<<<<<<< */
@@ -67,8 +327,20 @@ body {
 
 
 @media (min-width: 992px) {
-    body {
-        background-color: #ff0000;
+    .container {
+        max-width: 960px;
+    }
+
+    main {
+        height: 50vh;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
     }
 }
 
@@ -79,9 +351,73 @@ body {
 
 
 @media (min-width: 1200px) {
+
     body {
-        background-color: #ff0000;
+        background-color: #d81414;
     }
+
+    /*layout*/
+    .container {
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+
+
+    /*Cabeçalho*/
+    header {
+        height: 80px;
+
+    }
+
+    .logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        background-color: transparent;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a:hover {
+        color: var(--preto);
+
+    }
+
+    main {
+        height: 85vh;
+    }
+
+    /* DESTAQUE */
+    #destaque {
+        background-attachment: fixed;
+    }
+
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .topic {
+        display: flex;
+    }
+}
 }
 
 /* FIM Notebook / PC - HD <<<<<<<<<<<<<<<<<<<<<< */
@@ -91,9 +427,21 @@ body {
 
 
 @media (min-width: 1400px) {
-    body {
-        background-color: #ff0000;
+
+    /* LAYOUT */
+    .container {
+        max-width: 1340px;
     }
+
+    /* PRINCIPAL */
+    main h1 {
+        font-size: 6rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
 }
 
 /* FIM Notebook / PC / TV - Full HD ou 4K <<<<<< */
