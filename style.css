@@ -314,24 +314,32 @@ footer{
 }
 
 #elementos{
+    display: block;
     background-color: #a61118;
     text-align: center;
+    align-items: center;
     padding-top: 25px;
-;
-
+    padding-bottom: 25px;
 }
 
-#elementos .container{
-    
+#elementos .container {
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;      /* centraliza na vertical */
+    flex-wrap: wrap;          /* permite quebrar linha se tiver vários cartões */
+    gap: 40px;                /* espaço entre os cartões */
+    padding-bottom: 40px;     /* espaço abaixo */
 }
 
 .carta {
     width: 340px;
-    height: 500px;
+    height: 470px;
     background-color: #8b070d;
     margin-top: 25px;
     border:1px solid black; 
     border-radius: 25px;
+    margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .carta img{
@@ -354,6 +362,66 @@ footer{
 .carta a{
     color: var(--amarelo);
     border:1px solid #92030a ;
+}
+
+address{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+address img{
+    height: 45px;
+    width: 45px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+address p{
+    color: var(--branco);
+    font-size: 1rem;
+}
+
+.infor{
+    margin-left: 10px;
+}
+
+.mapa{
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+
+.esquerda_footer{
+    margin: 0 auto;
+}
+
+.esquerda_footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.esquerda_footer i{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+}
+
+.direita_footer{
+    margin: 0 auto;
+
+} 
+
+.direita_footer img{
+    margin: 0 10px;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -562,6 +630,55 @@ footer{
 
         height: 200px;
 
+    }
+
+    #elementos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        margin-left: -30px;
+    }
+
+    .carta{
+        margin: 0;
+    }
+
+
+
+    .saia{
+        display: flex;
+        justify-content: center;
+        margin: auto 0;
+        gap: 300px;
+    }
+
+    .infor{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 150px;
+    }
+
+    .mapa{
+        display: flex;
+    }
+
+    .mapa iframe{
+        height: 250px;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: center;
+        height: 150px;
+    }
+
+    .esquerda_footer{
+        margin: auto;
+    }
+
+    .direita_footer{
+        margin: auto;
     }
 }
 
