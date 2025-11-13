@@ -116,7 +116,7 @@ nav ul li a {
 
 /* Principal */
 
-main {
+#inicio {
     height: 50vh;
     background-color: #000;
     background: url(fotos/banner/banner.jpg);
@@ -124,21 +124,21 @@ main {
     background-position: center;
 }
 
-main .container {
+#inicio .container {
     height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-main h1 {
+#inicio h1 {
     text-align: center;
     color: var(--branco);
     font-size: 1.5rem;
     text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.5), 2px 2px 7px rgba(255, 255, 255, 0.5);
 }
 
-main h2 {
+#inicio h2 {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1.5rem;
     padding-top: 20px;
@@ -146,7 +146,7 @@ main h2 {
     text-shadow: 2px 2px 7px rgb(255, 255, 255);
 }
 
-#destaque {
+.destaque {
     display: flex;
     flex-direction: column;
     padding: 50px 10px;
@@ -156,7 +156,7 @@ main h2 {
 
 }
 
-#destaque .container {
+.destaque .container {
     display: flex;
 
     flex-direction: column;
@@ -188,7 +188,6 @@ main h2 {
 
 .hero-text {
     font-size: 1rem;
-    margin-left: 2vh;
 }
 
 .hero-text h2 {
@@ -260,23 +259,19 @@ section .oquefazemos h2 {
 #video {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-shadow: -2px 2px 2 rgba(0, 0, 0, 0.8);
 }
 
 #video iframe {
-    width: 80%;
-    max-width: 414px;
+    width: 350px;
     height: 215px;
+    margin-bottom: 30px;
     border: none;
     border-radius: 10px;
-    margin-bottom: 30px;
 
 }
 
 .fqs {
     background-color: var(--vermelhoescuro);
-    margin: 0;
 }
 
 
@@ -448,7 +443,7 @@ html{
     }
 
     /* */
-    main {
+    #inicio {
         height: 75vh;
     }
 
@@ -469,11 +464,11 @@ html{
     }
 
     /* PRINCIPAL */
-    main h1 {
+    #inicio h1 {
         font-size: 4rem;
     }
 
-    main h2 {
+    #inicio h2 {
         font-size: 1.5rem;
     }
 
@@ -490,15 +485,15 @@ html{
         max-width: 960px;
     }
 
-    main {
+    #inicio {
         height: 50vh;
     }
 
-    main h1 {
+    #inicio h1 {
         font-size: 3rem;
     }
 
-    main h2 {
+    #inicio h2 {
         font-size: 2rem;
     }
 }
@@ -555,12 +550,12 @@ html{
 
     }
 
-    main {
+    #inicio {
         height: 60vh;
     }
 
     /* DESTAQUE */
-    #destaque {
+    .destaque {
         background-attachment: fixed;
     }
 
@@ -593,12 +588,14 @@ html{
     .fqs {
         display: flex;
         justify-content: center;
-        height: 30%;
+        align-items: center;
+        gap: 150px;
+        height: 300px;
     }
 
     .oquefazemos {
         display: flex;
-        width: 700px;
+        width: 500px;
     }
     
 
@@ -608,21 +605,33 @@ html{
 
     #video {
         display: flex;
-        width: 500px;
-        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: auto;
+        margin-bottom: -30px;
     }
 
     .bloco_inteiro {
         display: flex;
         justify-content: center;
-        gap: 350px;
-        margin-left: -50px;
+        gap: 200px;
     }
 
-    .bloco_esquerdo{
+    .bloco_esquerda{
         display: flex;
         justify-content: center;
+        align-items: center;
 
+    }
+    
+    .bloco_esquerda h2{
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+    }
+
+    .bloco_esquerda p{
+        margin-bottom: 10px;
     }
 
 
@@ -641,8 +650,7 @@ html{
         flex-direction: row;
         justify-content: center;
         gap: 100px;
-        margin-left: -30px;
-    }
+        }
 
     .carta{
         margin: 0;
@@ -701,11 +709,11 @@ html{
     }
 
     /* PRINCIPAL */
-    main h1 {
+    #inicio h1 {
         font-size: 6rem;
     }
 
-    main h2 {
+    #inicio h2 {
         font-size: 2rem;
     }
 
