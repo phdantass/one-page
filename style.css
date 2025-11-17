@@ -87,6 +87,8 @@ body {
 }
 
 
+
+
 /* FIM layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
@@ -260,6 +262,7 @@ nav ul li a {
     max-width: 400px;
     text-align: center;
     text-shadow: -2px 2px 5px rgba(255, 255, 255, 0.8);
+    margin-top: 15px;
 }
 
 .vermelho img {
@@ -328,8 +331,12 @@ section .oquefazemos h2 {
     color: aliceblue;
 }
 
-.texto_link p {
+.texto_link h2{
     margin-bottom: 20px;
+}
+
+.texto_link p {
+    margin-bottom: 30px;
     text-shadow: -2px 2px 8px white;
 }
 
@@ -458,6 +465,12 @@ html{
     scroll-behavior: smooth;
 }
 
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
 
 
 /* FIM Smartphone portraint <<<<<<<<<<<<<<<<<<<< */
@@ -484,6 +497,21 @@ html{
     /* */
     #inicio {
         height: 75vh;
+    }
+
+    .saia{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .mapa{
+        height: 100px;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .infor{
+        margin: 0 auto;
     }
 
 
@@ -730,6 +758,10 @@ html{
 
     .direita_footer{
         margin: auto;
+    }
+
+    #topo{
+        display: none;
     }
 }
 
