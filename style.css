@@ -763,6 +763,10 @@ html{
     #topo{
         display: none;
     }
+
+    .texto_link p{
+        margin-bottom: 30px;
+    }
 }
 
 
